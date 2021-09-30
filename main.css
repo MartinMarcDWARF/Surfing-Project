@@ -21,16 +21,8 @@
   {
     font-size: 14px;
   }
-  .border-bottom
-  {
-    font-size: 25px;
-  }
   .card
   {
     border: none;
     background-color: transparent;
-  }
-  .border
-  {
-    border: solid red;
   }
