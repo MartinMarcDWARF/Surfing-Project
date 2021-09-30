@@ -1,3 +1,15 @@
+body
+{
+  cursor: url('HU.cur'), pointer;
+}
+.navbar
+{
+  font-family: "Baskerville Old Face",Arial, Helvetica, sans-serif;
+}
+  p
+  {
+      font-family: "Baskerville Old Face",Arial, Helvetica, sans-serif;
+  }
   .jumbotron-fluid 
   {
     background-image: url("surf.jpeg");
@@ -5,7 +17,7 @@
     background-size: cover;
     height: 800px;
   }
-  .Wallet
+   .Wallet
   {
     font-size: 150px;
   }
