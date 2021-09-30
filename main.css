@@ -30,3 +30,7 @@
     border: none;
     background-color: transparent;
   }
+  .border
+  {
+    border: solid red;
+  }
