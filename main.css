@@ -1,0 +1,31 @@
+  .jumbotron-fluid 
+  {
+    background-image: url("surf.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+  .Wallet
+  {
+    font-size: 150px;
+  }
+  .Parasol
+  {
+    font-size: 150px;
+  }
+  .Commu
+  {
+    font-size: 150px;
+  }
+  .card-text
+  {
+    font-size: 14px;
+  }
+  .border-bottom
+  {
+    font-size: 25px;
+  }
+  .card
+  {
+    border: none;
+  }
