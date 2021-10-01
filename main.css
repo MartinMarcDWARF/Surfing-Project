@@ -1,11 +1,11 @@
-body
-{
-  cursor: url('HU.cur'), pointer;
-}
-.navbar
-{
-  font-family: "Baskerville Old Face",Arial, Helvetica, sans-serif;
-}
+  body
+  {
+    cursor: url('HU.cur'), pointer;
+  }
+  .navbar
+  { 
+    font-family: "Baskerville Old Face",Arial, Helvetica, sans-serif;
+  }
   p
   {
       font-family: "Baskerville Old Face",Arial, Helvetica, sans-serif;
@@ -37,4 +37,11 @@ body
   {
     border: none;
     background-color: transparent;
+  }
+.Audio
+ {
+   display: none;
+   border: none;
+   background-color: none;
+   visibility: hidden;
   }

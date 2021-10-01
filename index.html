@@ -16,8 +16,30 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">The Surfing Project</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button id="ASong" onClick="playPause()" style="background-color: transparent; border: transparent; color: whitesmoke; font-size: 24px">
+      <audio
+        src="Cernunnos.mp3"
+        autoplay
+        loop
+      ></audio>
+      The Surfing Project
+    </button>
+    
+    <script>
+      var aud = document.getElementById("ASong").children[0];
+      var isPlaying = false;
+      aud.pause();
+    
+      function playPause() {
+        if (isPlaying) {
+          aud.pause();
+        } else {
+          aud.play();
+        }
+        isPlaying = !isPlaying;
+      }
+    </script>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,10 +47,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://www.youtube.com/watch?v=Q16KpquGsIc?rel=0&autoplay=1">Accueil <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Le Programme</a>
+          <a class="nav-link" href="https://www.youtube.com/embed/JxN4ZmhLBhQ?rel=0&autoplay=1">Le Programme</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -36,10 +58,10 @@
             Nos prochaines sessions
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://www.yout-ube.com/watch?v=NwnPw1jRAB8">Sessions Hiver 2021</a>
-            <a class="dropdown-item" href="https://youtu.be/Bbs1jxL_lQA?t=11">Sessions Tintagel 2021</a>
+            <a class="dropdown-item" href="https://www.youtube.com/embed/NwnPw1jRAB8?rel=0&autoplay=1">Sessions Hiver 2021</a>
+            <a class="dropdown-item" href="https://www.youtube.com/embed/FWtO0cfgewY?rel=0&autoplay=1">Sessions Tintagel 2021</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://www.yout-ube.com/watch?v=gxDzaqOMVQY">Sessions Sion 2021</a>
+            <a class="dropdown-item" href="https://www.youtube.com/embed/gxDzaqOMVQY?rel=0&autoplay=1">Sessions Sion 2021</a>
           </div>
     </div>
   </nav>
@@ -56,14 +78,14 @@
   </header>
   <main>
     <p class="text-center" style="font-size: 60px; margin: 60px;">The Surfing Project en 3 Points</p>
-    <div class="container">
-      <div class="row">
+    <div class="container d-flex">
+      <div class="row d-flex">
         <div class="row d-flex justify-content-center">
-          <div class="card" style="width: 18rem; margin-right: 80px;">
+          <div class="card d-flex" style="width: 18rem; margin-right: 80px;">
             <div class="Wallet">
               <i class="fas fa-wallet d-flex justify-content-center" style="color:red; margin-bottom: 30px;"></i>
               <p class="text-center" style="font-size: 30px; margin-bottom: -10px;">Pas Chère</p>
-              <div class="card-body">
+              <div class="card-body d-flex">
                 <p class="text-center" style="font-size: 15px;">Ut i skuma
                   Lokkar til meg
                   Kvite ramnen
@@ -93,13 +115,13 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="card" style="width: 18rem; margin-left: 80px; margin-right: 80px;">
+          <div class="row d-flex">
+            <div class="card d-flex" style="width: 18rem; margin-left: 80px; margin-right: 80px;">
               <div class="Parasol">
                 <i class="fas fa-umbrella-beach d-flex justify-content-center"
                   style="color:red; margin-bottom: 30px"></i>
                 <p class="text-center" style="font-size: 30px; margin-bottom: -10px;">Relax</p>
-                <div class="card-body">
+                <div class="card-body d-flex">
                   <p class="text-center" style="font-size: 15px;">Vil du meg fylgja
                     Gav meg sjon
                     Galdrekråka
@@ -125,12 +147,12 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="card" style="width: 18rem; margin-left: 80px;">
+            <div class="row d-flex">
+              <div class="card d-flex" style="width: 18rem; margin-left: 80px;">
                 <div class="Commu"><i class="fas fa-address-book d-flex justify-content-center"
                     style="color:red; margin-bottom: 30px"></i>
                   <p class="text-center" style="font-size: 30px; margin-bottom: -10px;">La Communauté</p>
-                  <div class="card-body">
+                  <div class="card-body d-flex">
                     <p class="text-center" style="font-size: 15px;">
                       Hjartet fylgjer, tveim blir ein
                       Rir meg fri med raske bein
@@ -165,8 +187,8 @@
             <!--Grid Témoignages-->
             <p class="text-center" style="font-size: 60px; margin: 30px; margin-bottom: 50px;">Témoignages</p>
             <div class="row d-flex justify-content-lg-start">
-              <div class="row">
-                <div class="card" style="width: 615px;">
+              <div class="row d-flex">
+                <div class="card d-flex" style="width: 615px;">
                   <div class="Grim">
                     <img src="Grimsurf.webp" class="card-img-fluid" style="height: 500px; width: 600px; padding-right: 30px;" alt="...">
                     <div class="card-body">
@@ -185,17 +207,17 @@
                   </div>
                 </div>
                 <div class="row d-flex justify-content-around"></div>
-                <div class="row">
-                  <div class="card" style="width: 615px;">
+                <div class="row d-flex">
+                  <div class="card d-flex" style="width: 615px;">
                     <div class="Girl">
-                      <img src="Surfgirl.jpeg" class="card-img-top"
+                      <img src="Surfgirl.png" class="card-img-top"
                         style="height: 500px; width: 600px; margin-left: 20px; padding-left: 10px;" alt="...">
                       <div class="card-body">
-                        <p class="text-left" style="font-size: 12px;">"En m'inscrivant je savais que j'allais
+                        <p class="text-left" style="font-size: 12px; margin-left: 10px;">"En m'inscrivant je savais que j'allais
                           échouer mais je me relevais instantanément.
                           C'était pas la mer à boire !"</br>
                           <u><em>
-                              <p class="text-left" style="font-size: 12px; margin-top: 35px;">Jacqueline, 30 Février
+                              <p class="text-left" style="font-size: 12px; margin-top: 32px; margin-left: 10px;">Jacqueline, 30 Février
                                 2019</p></u></em>
                         </p>
                       </div>
@@ -206,11 +228,11 @@
             </div>
             <p class="text-center" style="font-size: 60px; margin-top: 50px; margin-bottom: -100px;">Prix</p>
             <!--Tableaux des Prix-->
-            <div class="container">
+            <div class="container d-flex">
               <div class="row d-flex justify-content-center">
-                <div class="row">
-                  <div class="row" style="margin-right: 70px;">
-                    <div class="card" style="width: 18rem;">
+                <div class="row d-flex">
+                  <div class="row d-flex" style="margin-right: 70px;">
+                    <div class="card d-flex" style="width: 18rem;">
                       <div class="Wallet">
                         <p class="text-center"><span class="semaine" style="font-size: 25px">Semaine
                             d'essai</span></p>
@@ -226,8 +248,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row" style="margin-left: 70px; margin-right: 80px;">
-                    <div class="card" style="width: 18rem;">
+                  <div class="row d-flex" style="margin-left: 70px; margin-right: 80px;">
+                    <div class="card d-flex" style="width: 18rem;">
                       <div class="Parasol">
                         <p class="text-center"><span class="Bird" style="font-size: 25px;">Early
                             Bird</span></p>
@@ -241,8 +263,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row" style="margin-left: 85px;">
-                      <div class="card" style="width: 18rem;">
+                    <div class="row d-flex" style="margin-left: 85px;">
+                      <div class="card d-flex" style="width: 18rem;">
                         <div class="Commu">
                           <p class="text-center"><span class="3fois" style="font-size: 25px;">En
                               Trois Fois</p></span>
@@ -258,9 +280,10 @@
                       </div>
                     </div>
                   </div>
-  </main>
+                </main>
   <footer>
     <p class="text" style="font-size: 14px; margin-left: 100px; margin-top: 10px;">&copy; Bootstrap, et The Surfing Project</p>
+  <div class="Audio"><audio src="Cernunnos.mp3" controls loop></audio></div>
   </footer>
   <!-- Optional Jap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
